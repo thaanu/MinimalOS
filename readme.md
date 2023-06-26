@@ -1,13 +1,12 @@
 # Preperation
 
-Before starting, download the following 3 files.
+Before starting, download the following 2 files.
 
 1. https://ftp.mirrorservice.org/sites/sourceware.org/pub/gcc/releases/gcc-5.3.0/gcc-5.3.0.tar.gz
 2. https://ftp.gnu.org/gnu/binutils/binutils-2.25.1.tar.gz
-3. https://gitlab.uwe.ac.uk/s23-li/minimalOS
 
 
-You can copy/paste the link in the browser to download. Keep the files in the **Downloads** directory
+You can copy/paste the link in the browser to download.
 
 After downloading move both the zipped files to same location as **setup.sh**
 
@@ -23,3 +22,12 @@ In-case you get an error regarding persmission, change the file permission using
 
 
 This application has been tested on Ubuntu 16.4.7
+
+
+# Difficulties
+
+1. You might have to install **qemu-system-x86**
+`sudo apt install qemu-system-x86`
+
+2. Update or install **xorriso**
+`sudo apt-get install -y xorriso`

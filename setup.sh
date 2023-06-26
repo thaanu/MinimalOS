@@ -1,8 +1,8 @@
 echo "Setup the environment" 
 
-export PREFIX="$HOME/cross-tools"
-export TARGET=i686-elf
-export PATH="$PREFIX/bin:$PATH"
+export PREFIX="$HOME/cross-tools" &&
+export TARGET=i686-elf &&
+export PATH="$PREFIX/bin:$PATH" &&
 
 
 echo "Create directory $PREFIX"
@@ -31,10 +31,42 @@ cd $PREFIX/source/gcc-5.3.0/gcc_build &&
 ../configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-languages=c,c++ --without-headers
 
 
+
+echo "all-gcc"
+sleep 5
 make all-gcc && 
 make all-target-libgcc && 
 make install-gcc && 
-make install-target-libgcc
+make install-target-libgcc &&
+
+
+
+cd $PREFIX && 
+
+git clone https://gitlab.uwe.ac.uk/s23-li/minimalOS &&
+
+cd $PREFIX/minimalOS && 
+
+mkdir -p isodir/boot/grub && 
+
+make && 
+
+sudo apt install qemu-system-x86 && 
+sudo apt-get install -y xorriso && 
+
+
+qemu-system-i386 --kernel minimal.bin
+
+
+
+
+
+
+
+
+
+
+
 
 
 
