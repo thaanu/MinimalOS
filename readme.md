@@ -7,6 +7,7 @@ Before starting, download the following 2 files.
 
 
 You can copy/paste the link in the browser to download. Keep the files in the **Downloads** directory
+
 After downloading move both the zipped files to same location as **setup.sh**
 
 # How to install
