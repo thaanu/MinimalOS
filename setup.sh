@@ -51,8 +51,8 @@ mkdir -p isodir/boot/grub &&
 
 make && 
 
-sudo apt install qemu-system-x86 && 
-sudo apt-get install -y xorriso && 
+sudo apt install qemu-system-x86; 
+sudo apt-get install -y xorriso; 
 
 
 qemu-system-i386 --kernel minimal.bin
