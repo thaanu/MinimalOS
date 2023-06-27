@@ -13,8 +13,7 @@ After downloading move both the zipped files to same location as **setup.sh**
 # How to install
 Run the setup.sh file using the following command
 
-`./setup.sh`
-
+`source setup.sh`
 
 In-case you get an error regarding persmission, change the file permission using the following command. (You might need sudo privillages)
 
